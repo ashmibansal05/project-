@@ -1,1 +1,107 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    border: box-shadow;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(66, 64, 64);
+    color: white;
+   }
 
+.page1{
+    height: 100%;
+    width: 100%;
+    background-image: url(photog1.avif);
+    background-position: center;
+    background-size: cover;
+   
+
+}
+.navbar{
+    background-color: black;
+    height: 60px;
+    width: 100%;
+    font-size: 20px;
+   font-weight: 800;
+   letter-spacing: 1px;
+    color: white;
+    display:flex;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    color: rgb(229, 115, 67);
+}
+img{
+  height: 50px;
+  width: 50px;
+   
+}
+.HOME{
+    padding:8px ;
+    margin-left: 27px;
+    border-radius: 5px;
+    color: rgb(255, 0, 0);
+    border: 2px solid transparent;
+}
+.HOME:hover{
+    color: rgb(249, 238, 238);
+    background-color: rgb(200, 130, 125);
+    border: 2px solid white;
+}
+.aboutus{
+    padding:8px ;
+    border-radius: 5px;
+    margin-left: 27px;
+    color: rgb(255, 0, 0);
+    border: 2px solid transparent;
+}
+.aboutus:hover{
+    color: rgb(249, 238, 238);
+    background-color: rgb(200, 130, 125);
+    border: 2px solid white;
+}
+.ourservice{
+    padding:8px ;
+    border-radius: 5px;
+    margin-left: 27px;
+    color: rgb(255, 0, 0);
+    border: 2px solid transparent;
+}
+.ourservice:hover{
+    color: rgb(249, 238, 238);
+    background-color: rgb(200, 130, 125);
+    border: 2px solid white;
+}
+.contactus{
+    padding:8px ;
+    border-radius: 5px;
+    margin-left: 27px;
+    color: rgb(255, 0, 0);
+    border: 2px solid transparent;
+}
+.contactus:hover{
+    color: rgb(249, 238, 238);
+    background-color: rgb(200, 130, 125);
+    border: 2px solid white;
+}
+.login{
+    padding:8px ;
+    border-radius: 5px;
+    margin-left: 540px;
+    display: flex;
+    color: rgb(255, 0, 0);
+    border: 2px solid transparent;
+}
+.login .icon{
+    color: rgb(255, 0, 0);
+    margin-right: 7px;
+    
+}
+.login:hover{
+    color: rgb(249, 238, 238);
+    background-color: rgb(200, 130, 125);
+    border: 2px solid white;
+}
