@@ -1,4 +1,4 @@
-*{
+/**{
     margin: 0%;
     padding: 0%;
     border: box-shadow;
@@ -38,8 +38,8 @@ img{
   height: 50px;
   width: 50px;
    
-}
-/* .HOME{
+}*/
+ .HOME{
     padding:8px ;
     margin-left: 27px;
     border-radius: 5px;
@@ -104,7 +104,7 @@ img{
     color: rgb(249, 238, 238);
     background-color: rgb(200, 130, 125);
     border: 2px solid white;
-} */
+} 
 
 .nav-sec{
     margin-left: 13rem;
