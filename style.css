@@ -176,14 +176,7 @@ img{
 #aboutus .div1{
 text-align: left;
 }
-.copyright{
-    text-align: center;
-    font-size: 20px;
-    height: 40px;
-    width: 100%;
-    color: aliceblue;
-    background: #000;
-}
+
 
 .page3{
     background-color: rgba(0, 0, 0, 0.579);
@@ -239,6 +232,83 @@ text-align: left;
     margin-top: 4rem;
     margin-left: 3rem;
     font-size: 25px;
+}
+
+.contact{
+    background-color: #000000bb;
+   
+}
+.contact .heading{
+    font-size: 60px;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(254, 153, 12);
+}
+.contact .icons-container{
+    display: flex;
+    gap:1rem;
+    flex-wrap: wrap;
+   margin-top: 35px;
+   padding-bottom: 50px;
+  
+   
+}
+
+
+.contact .icons-container .icons{
+    color: aqua;
+    height: 220px;
+    width: 410px;
+    margin-left: 28px;
+    
+    text-align: center;
+    padding:1.5rem;
+    background:#c9c6c6;
+    box-shadow: 0 .5rem 1rem rgba(45, 42, 42, 0.1);
+    border-radius: 1rem;
+}
+
+.contact .icons-container .icons i{
+    height:10rem;
+    width:10rem;
+    padding: 9px;
+    line-height: 4rem;
+    font-size: 2.5rem;
+    background:rgb(247, 188, 94);
+    color:#2c2c2c;
+    border-radius: 50%;
+}
+.contact .icons-container .icons i:hover{
+    background-color: #111;
+    color: aliceblue;
+}
+
+.contact .icons-container .icons h3{
+    color:#111;
+    font-size: 2rem;
+    padding:.5rem 0;
+    padding-top: 1rem;
+    text-transform: capitalize;
+}
+
+.contact .icons-container .icons p{
+    color:#4d4848;
+    font-size: 1.7rem;
+    text-transform: capitalize;
+}
+
+
+ 
+.copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+    height: 60px;
+    width: 100%;
+    color: aliceblue;
+    background: #000;
 }
 
  
