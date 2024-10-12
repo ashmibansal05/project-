@@ -249,18 +249,14 @@ text-align: left;
     gap:1rem;
     flex-wrap: wrap;
    margin-top: 35px;
-   padding-bottom: 50px;
-  
-   
+   padding-bottom: 50px;   
 }
-
 
 .contact .icons-container .icons{
     color: aqua;
     height: 220px;
     width: 410px;
     margin-left: 28px;
-    
     text-align: center;
     padding:1.5rem;
     background:#c9c6c6;
