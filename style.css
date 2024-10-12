@@ -72,6 +72,7 @@ img{
     color: rgb(249, 238, 238);
     background-color: rgb(200, 130, 125);
     border: 2px solid white;
+    cursor: pointer;
 }
 .aboutus{
     padding:8px ;
@@ -86,6 +87,7 @@ img{
     color: rgb(249, 238, 238);
     background-color: rgb(200, 130, 125);
     border: 2px solid white;
+    cursor: pointer;
 }
 .ourservice{
     padding:8px ;
@@ -100,6 +102,7 @@ img{
     color: rgb(249, 238, 238);
     background-color: rgb(200, 130, 125);
     border: 2px solid white;
+    cursor: pointer;
 }
 .contactus{
     padding:8px ;
@@ -113,6 +116,7 @@ img{
     color: rgb(249, 238, 238);
     background-color: rgb(200, 130, 125);
     border: 2px solid white;
+    cursor: pointer;
 }
 .login{
     padding:10px 30px ;
@@ -133,6 +137,7 @@ img{
     color: rgb(249, 238, 238);
     background-color: rgb(200, 130, 125);
     border: 2px solid white;
+    cursor: pointer;
 }
 .homecontent h1{
    text-transform: uppercase;
