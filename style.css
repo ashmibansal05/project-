@@ -251,25 +251,92 @@ text-align: left;
     margin-left: 3rem;
     font-size: 25px;
 }
-.review{
-    width: 100%;
-    height: 2rem;
-    background-color:#121212;
-    display: flex;
+.page4{
+    background-color:#07021d;
+
+    
 }
-.review a{
-    text-decoration: none;
-    color: red;
-    font-size: 30px;
+
+.reviewcontent{
+    padding: 35px;
+    font-size: 45px;
+    font-weight: 900;
     text-align: center;
-    margin-left: 1rem;
+   /* font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;*/
 }
-.review a:hover{
-    text-decoration: lightseagreen underline;
+.reviewbox{
+    display:flex;
+    justify-content:space-evenly;
+    text-align: center;
+
 }
-.review p{
-    font-size: 30px;
+.reviewbox .items{
+    padding: 20px;
+    height: 280px;
+    width: 330px;
+    color: #000;
+    background: #ffffff;
+    border-radius: 35px;
+
 }
+.items{
+    font-size: 20px;
+    text-align: left;
+    margin-left: 15px;
+    
+}
+.items p{
+    font-size: 20px;
+    font-weight: 500;
+    color: #4a4545;
+    
+}
+ .items d{
+    margin-left: 35px;
+    word-spacing: 4px;
+    font-size: 20px;
+   
+    
+
+}
+.items span{
+   
+    font-size:25px ;
+}
+.items b{
+   
+    font-size: 25px;
+    font-weight: 600;
+    text-transform:capitalize
+    
+}
+.reviewbtn{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 30px;
+}
+.reviewbtn button{
+   
+    font-size: 25px;
+    padding: 10px 20px;
+    border-radius: 50px;
+   background-color: #ffffff;
+   border: 2px solid rgb(28, 191, 216);
+    color: #000000;
+    
+}
+.reviewbtn button:hover{
+   
+    font-size: 25px;
+    padding: 10px 20px;
+    border-radius: 50px;
+   background-color: #6b7a89;
+   border: 2px solid rgb(28, 191, 216);
+    color: #ffffff;
+    
+}
+
 
 .contact{
     background-color: #000000bb;
