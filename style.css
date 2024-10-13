@@ -208,11 +208,7 @@ text-align: left;
     height: 50%;
     margin-top: 2rem;
 }
-#btn1{
-    margin-left: 6rem;
-    margin-top: 2.7rem;
-    transform: scale(1.5);
-}
+
 .s1{
     /* background-color:#121212; */
     display: flex;
