@@ -207,6 +207,40 @@ text-align: left;
     height: 50%;
     margin-top: 2rem;
 }
+.s1{
+    /* background-color:#121212; */
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    /* opacity: 0.5; */
+}
+.ss1,.ss2,.ss3{
+    width: 350px;
+    height: 200px;
+    background-color: #232323;
+    margin-left: 3.5rem;
+    margin-top: 2rem;
+    border-radius: 7%;
+    color: aqua;
+}
+.ss1:hover{
+    background-image: url(painter.jpeg);
+    background-size: cover;
+    cursor: pointer;
+    transform: scale(1.3);
+}
+.ss2:hover{
+    background-image: url(electrician.jpg);
+    background-size: cover;
+    cursor: pointer;
+    transform: scale(1.3);
+}
+.ss3:hover{
+    background-image: url(plumber.jpg);
+    background-size: cover;
+    cursor: pointer;
+    transform: scale(1.3);
+}
 .review{
     width: 100%;
     height: 2rem;
