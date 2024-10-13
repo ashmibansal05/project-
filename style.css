@@ -207,6 +207,11 @@ text-align: left;
     height: 50%;
     margin-top: 2rem;
 }
+#btn1{
+    margin-left: 6rem;
+    margin-top: 2.7rem;
+    transform: scale(1.5);
+}
 .s1{
     /* background-color:#121212; */
     display: flex;
@@ -240,6 +245,11 @@ text-align: left;
     background-size: cover;
     cursor: pointer;
     transform: scale(1.3);
+}
+#ssh{
+    margin-top: 4rem;
+    margin-left: 3rem;
+    font-size: 25px;
 }
 .review{
     width: 100%;
