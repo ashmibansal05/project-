@@ -235,6 +235,24 @@ text-align: left;
   #btn1:active {
     transform: translateY(-1px);
   }
+
+.h4i{
+    color:orangered;
+    position: absolute;
+    font-size: 35px;
+    transform: translateY(-27rem);
+    margin-left: 57rem;
+}
+.p1{
+    color:white;
+    position: absolute;
+    font-size: 25px;
+    transform: translateY(-16rem);
+    margin-left: 31rem;
+    background: linear-gradient(to right, rgb(255, 0, 43), rgb(3, 240, 18));
+    color: transparent;
+    -webkit-background-clip: text;
+}
 .s1{
     /* background-color:#121212; */
     display: flex;
