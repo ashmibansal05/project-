@@ -261,8 +261,8 @@ text-align: left;
     /* opacity: 0.5; */
 }
 .ss1,.ss2,.ss3{
-    width: 350px;
-    height: 200px;
+    width: 370px;
+    height: 220px;
     background-color: #232323;
     margin-left: 3.5rem;
     margin-top: 2rem;
@@ -291,6 +291,7 @@ text-align: left;
     margin-top: 4rem;
     margin-left: 3rem;
     font-size: 25px;
+    color: rgb(237, 165, 10);
 }
 .page4{
     background-color:#07021d;
