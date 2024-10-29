@@ -10,21 +10,23 @@
     rel="stylesheet"
 />
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="review.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
    
         <div class="navbar">
             <div class="logo">
                 <h2><span>Service</span></h2>
-               <span> <h2><a>Sphere</a></h2></span>
+               <span> <h2><c>Sphere</c></h2></span>
                 
             </div>
             
-            <div class="HOME"> Home</div>
-            <div class="aboutus">About Us</div>
-            <div class="ourservice">Our Service</div>
-            <div class="contactus">Contact Us</div>
+            <div class="HOME" ><a href=" " >home</a></div>
+            <div class="aboutus"><a href="#page2" >About Us</a></div>
+            <div class="ourservice"><a href="#page3" >Our Service</a></div>
+            <div class="contactus"><a href="#contact" >Contact Us</a></div>
             <div class="login"><div class="icon"><i class="ri-user-3-line"></i></div>Login</div>
        
            
@@ -38,11 +40,21 @@
             <br>
             <h2>"we beleive turning our customer into our family"</h2>
         </div>
+        <!--search box hai yha pe humne different service ko link kiya hai jisse hum uss page pe move kar jaaye -->
+        <div class="searchbox">
+            <h2>select your first service </h2>
+            <select name="link" id="" size="1" onchange="window.location.href=this.value;">
+                <option value=""><b>HOMESERVICE LIST</b> <b><i class="ri-arrow-drop-down-line"></i></b></option>
+                <option value="https://www.justdial.com/Faridabad/House-Painters-in-Faridabad-Nit/nct-11017366">PAINTER</option>
+                <option value="https://www.justdial.com/Faridabad/Electricians-in-Faridabad-City/nct-10184166">ELECTRICIAN</option>
+                <option value="https://www.urbancompany.com/delhi-ncr-plumbers-faridabad">PLUMBER</option>
+            </select>
+        </div>
     </div>
       
     </div>
     <!--yha about us section hai -->
-    <div class="page2">
+    <div class="page2"> <div id="page2">
         
             <h1>About Us</h1>
             <h3>(know everything about service sphere)</h3>
@@ -72,8 +84,13 @@
     </div>
     </div>
 </div>
- <div class="page3">
-        <img src="services(1).jpg" alt="">
+</div>
+
+
+<!--                                                    our service page hai abbb                                              -->
+
+<div class="page3"> <div id="page3">
+        <img src="gp2.webp" alt="">
         <div class="servicecontent">
             <h1>Our Services</h1>
             <br>
@@ -102,10 +119,8 @@
                 <button id="btn1">Book Now</button>
             </div>
         </div>
-   
-</body>
-</html>
-    <!--reviews page -->
+    </div>
+        <!--                                        reviews page                                                       -->
     <div class="page4">
         <div class="reviewcontent">
             Hear it from our happy customers
@@ -157,28 +172,29 @@
                 <p>Jaitpur,New Delhi</p>
             </div>
         </div>
-        <div class="reviewbtn"><button><a href="review.html" target="_blank">Add review</a></button>
+        <div class="reviewbtn"><button><a href="index1.html" target="_blank">Add review</a></button>
         </div>
         
     </div>
 
 
-   <!-- contact section starts  -->
+
+ <!-- contact section starts  -->
 
  <section class="contact" id="contact">
-    <h1 class="heading">contact <span> Us </span></h1>
+    <h1 class="heading">contact <span> me </span></h1>
 
     <div class="icons-container">
       <div class="icons">
         
         <i class="ri-mail-fill"></i>
-        <h3>Email</h3>
-        <p>sphereservice698@gmail.com</p>
+        <h3>my email</h3>
+        <p>Servicesphere@gmail.com</p>
       </div>
 
       <div class="icons">
         <i class="ri-phone-fill"></i>
-        <h3>Number</h3>
+        <h3>my number</h3>
         <p>+91 9999111101</p>
       </div>
 
@@ -196,6 +212,10 @@
     <div class="copyright">
         @group project(sourav kumar,ankit jha, ashmi bansal,kartikeya ) - servicesphere
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js">
+    </script>
     
 </body>
 </html>
