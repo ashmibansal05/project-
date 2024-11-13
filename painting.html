@@ -1,48 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Painting</title>
-    <link rel="stylesheet" href="painting.css">
+    <title>Plumber Services - Service Sphere</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff7e0;
+            color: #004d00;
+            margin: 0;
+            padding: 0;
+        }
+        
+        h1 {
+            text-align: center;
+            background-color: #f5c542;
+            color: #004d00;
+            padding: 1em;
+            margin: 0;
+        }
+        
+        .top-bar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            background-color: #f5c542;
+            gap: 20px;
+            /* Adds space between search bar and dropdown */
+        }
+        
+        .search-bar,
+        .area-select {
+            max-width: 180px;
+            /* Smaller width */
+        }
+        
+        .search-bar input,
+        .area-select select {
+            width: 100%;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #004d00;
+        }
+        
+        .services-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            overflow-y: scroll;
+            height: 75vh;
+        }
+        
+        .service-card {
+            background-color: #f0e68c;
+            border: 1px solid #004d00;
+            border-radius: 8px;
+            width: 80%;
+            /* Reduced width */
+            padding: 15px;
+            margin: 10px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .service-image {
+            width: 100px;
+            /* Increased width */
+            height: 100px;
+            /* Increased height */
+            margin-right: 15px;
+            object-fit: cover;
+        }
+        
+        .service-title {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #004d00;
+        }
+        
+        .price,
+        .time-required {
+            font-weight: bold;
+            color: #004d00;
+        }
+        
+        .add-to-cart-btn {
+            background-color: #f5c542;
+            color: #004d00;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        
+        .add-to-cart-btn:hover {
+            background-color: #e6b800;
+        }
+    </style>
 </head>
+
 <body>
-    <img src="painting1.jpg">
-<div class="searchBox">
 
-            <input class="searchInput" type="text" name="" placeholder="Search for painter">
-            <button class="searchButton" href="#">
-                   
-                  
+    <h1>Plumber Services</h1>
 
-                                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
-  <g clip-path="url(#clip0_2_17)">
-    <g filter="url(#filter0_d_2_17)">
-      <path d="M23.7953 23.9182L19.0585 19.1814M19.0585 19.1814C19.8188 18.4211 20.4219 17.5185 20.8333 16.5251C21.2448 15.5318 21.4566 14.4671 21.4566 13.3919C21.4566 12.3167 21.2448 11.252 20.8333 10.2587C20.4219 9.2653 19.8188 8.36271 19.0585 7.60242C18.2982 6.84214 17.3956 6.23905 16.4022 5.82759C15.4089 5.41612 14.3442 5.20435 13.269 5.20435C12.1938 5.20435 11.1291 5.41612 10.1358 5.82759C9.1424 6.23905 8.23981 6.84214 7.47953 7.60242C5.94407 9.13789 5.08145 11.2204 5.08145 13.3919C5.08145 15.5634 5.94407 17.6459 7.47953 19.1814C9.01499 20.7168 11.0975 21.5794 13.269 21.5794C15.4405 21.5794 17.523 20.7168 19.0585 19.1814Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" shape-rendering="crispEdges"></path>
-    </g>
-  </g>
-  <defs>
-    <filter id="filter0_d_2_17" x="-0.418549" y="3.70435" width="29.7139" height="29.7139" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-      <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
-      <feOffset dy="4"></feOffset>
-      <feGaussianBlur stdDeviation="2"></feGaussianBlur>
-      <feComposite in2="hardAlpha" operator="out"></feComposite>
-      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix>
-      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_17"></feBlend>
-      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_17" result="shape"></feBlend>
-    </filter>
-    <clipPath id="clip0_2_17">
-      <rect width="28.0702" height="28.0702" fill="white" transform="translate(0.403503 0.526367)"></rect>
-    </clipPath>
-  </defs>
-</svg>
-                     
+    <!-- Top Bar with Search and Area Selection -->
+    <div class="top-bar">
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search for services..." onkeyup="filterServices()">
+        </div>
+        <div class="area-select">
+            <select>
+                <option value="">Select Area in Delhi</option>
+                <option value="south-delhi">South Delhi</option>
+                <option value="north-delhi">North Delhi</option>
+                <option value="east-delhi">East Delhi</option>
+                <option value="west-delhi">West Delhi</option>
+                <option value="central-delhi">Central Delhi</option>
+                <option value="south-west-delhi">South-West Delhi</option>
+                <option value="north-east-delhi">North-East Delhi</option>
+                <option value="south-east-delhi">South-East Delhi</option>
+                <option value="north-west-delhi">North-West Delhi</option>
+            </select>
+        </div>
+    </div>
 
-            </button>
+    <!-- Scrollable Service List -->
+    <div class="services-container" id="servicesContainer">
+        <div class="service-card" data-title="Pipe Repair">
+            <img src="images/pipe_repair.jpg" alt="Pipe Repair" class="service-image">
+            <div>
+                <p class="service-title">Pipe Repair</p>
+                <p>Repair of damaged or leaking pipes for efficient water flow.</p>
+                <p><span class="price">₹400</span> - <span class="time-required">40 mins</span></p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
         </div>
 
+        <div class="service-card" data-title="Leak Fixing">
+            <img src="images/leak_fixing.jpg" alt="Leak Fixing" class="service-image">
+            <div>
+                <p class="service-title">Leak Fixing</p>
+                <p>Fixing leaks in faucets, showerheads, and pipes to prevent water wastage.</p>
+                <p><span class="price">₹350</span> - <span class="time-required">30 mins</span></p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
 
-        
+        <div class="service-card" data-title="Drain Unclogging">
+            <img src="images/drain_unclogging.jpg" alt="Drain Unclogging" class="service-image">
+            <div>
+                <p class="service-title">Drain Unclogging</p>
+                <p>Unclogging and cleaning drains to ensure smooth water flow.</p>
+                <p><span class="price">₹250</span> - <span class="time-required">40 mins</span></p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="service-card" data-title="Faucet Installation">
+            <img src="images/faucet_installation.jpg" alt="Faucet Installation" class="service-image">
+            <div>
+                <p class="service-title">Faucet Installation</p>
+                <p>Installation of faucets, including modern designs for efficient water use.</p>
+                <p><span class="price">₹180</span> - <span class="time-required">25 mins</span></p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="service-card" data-title="Water Heater Installation">
+            <img src="images/water_heater_installation.jpg" alt="Water Heater Installation" class="service-image">
+            <div>
+                <p class="service-title">Water Heater Installation</p>
+                <p>Efficient installation of water heaters for warm water supply.</p>
+                <p><span class="price">₹500</span> - <span class="time-required">50 mins</span></p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="service-card" data-title="Toilet Repair">
+            <img src="images/toilet_repair.jpg" alt="Toilet Repair" class="service-image">
+            <div>
+                <p class="service-title">Toilet Repair</p>
+                <p>Repair and maintenance of toilets to prevent leakage and blockages.</p>
+                <p><span class="price">₹450</span> - <span class="time-required">45 mins</span></p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function filterServices() {
+            const input = document.getElementById("searchInput").value.toLowerCase();
+            const serviceCards = document.querySelectorAll(".service-card");
+
+            serviceCards.forEach(card => {
+                const title = card.getAttribute("data-title").toLowerCase();
+                if (title.includes(input)) {
+                    card.style.display = "flex"; // Show matching service
+                } else {
+                    card.style.display = "none"; // Hide non-matching service
+                }
+            });
+        }
+    </script>
+
 </body>
+
 </html>
